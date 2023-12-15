@@ -86,7 +86,6 @@ MY_USERS = (my_users) if my_users else []
 
 
 # Online Stream and Download
-PORT = int(environ.get('PORT', 8000))
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
@@ -115,7 +114,6 @@ if HAS_SSL:
     URL = "https://zenfilters-7072bfb4eada.herokuapp.com/".format(FQDN)
 else:
     URL = "https://zenfilters-7072bfb4eada.herokuapp.com/".format(FQDN)
-REPO_OWNER = "LazyDeveloperr"
 
 # Auto Delete For Group Message (Self Delete) #
 SELF_DELETE_SECONDS = int(environ.get('SELF_DELETE_SECONDS', 300))
